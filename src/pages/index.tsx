@@ -21,13 +21,20 @@ const Home: NextPage = () => {
             Dev Challenges
           </Link>
         </nav>
-        <div className="h-screen p-2">
+        <div className="min-w-lg mx-auto flex h-screen flex-col space-y-4 p-2">
           <Link
             href="/NotFound404"
-            className="hover:text-green button rounded-md bg-green-700 p-2 text-lg font-medium"
+            className="hover:text-green button mx-auto rounded-md bg-green-700 p-2 text-lg font-medium"
           >
             {" "}
             Not Found 404
+          </Link>
+          <Link
+            href="/CreativeCrew"
+            className="hover:text-green button mx-auto rounded-md bg-green-700 p-2 text-lg font-medium"
+          >
+            {" "}
+            Creative Crew
           </Link>
         </div>
         <Footer />
