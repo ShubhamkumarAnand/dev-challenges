@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../../components/Footer";
 import Scarecrow from "../../public/Scarecrow.png";
 
 const NotFound404 = () => {
@@ -28,12 +29,13 @@ const NotFound404 = () => {
             </p>
             <Link
               href="/"
-              className="z-10 mr-auto justify-start rounded-md bg-black px-6 py-4 font-bold text-white shadow-md hover:bg-green-900"
+              className="z-10 mr-auto border-spacing-3 justify-start rounded-sm border-gray-700 bg-black p-5 font-bold text-white shadow-md hover:bg-green-900"
             >
               Back To Homepage
             </Link>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

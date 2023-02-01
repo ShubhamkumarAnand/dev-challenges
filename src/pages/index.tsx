@@ -1,6 +1,10 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
+
+import devchallenges from "public/devchallenges.png";
+import Footer from "../../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +14,24 @@ const Home: NextPage = () => {
         <meta name="description" content="Responsive Design Challenges" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Hello Responsive Design</h1>
+      <div className="p-4">
+        <nav className="flex space-x-1 p-2">
+          <Image src={devchallenges} alt="logo" className="mt-1 h-4 w-4" />
+          <Link href="/" className="button cursor-pointer font-bold">
+            Dev Challenges
+          </Link>
+        </nav>
+        <div className="h-screen p-2">
+          <Link
+            href="/NotFound404"
+            className="hover:text-green button rounded-md bg-green-700 p-2 text-lg font-medium"
+          >
+            {" "}
+            Not Found 404
+          </Link>
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };
