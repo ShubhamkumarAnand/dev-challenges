@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../../components/Footer";
-import Scarecrow from "../../public/Scarecrow.png";
+import Scarecrow from "../../public/404-Not-Found/Scarecrow.png";
 
 const NotFound404 = () => {
   return (
