@@ -40,3 +40,8 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+prettier.config.cjs
+
+# Editor
+.vscode
+.vscode/settings.json
